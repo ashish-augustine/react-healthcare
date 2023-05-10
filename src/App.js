@@ -8,7 +8,7 @@ import { Login } from "./pages/login/Login"
 import { Regsiter } from "./pages/login/Regsiter"
 import { useSelector } from "react-redux"
 
-const App = () => {
+
   const isLoggIn = useSelector((state) => state.auth.isLoggIn)
   const cartItems = useSelector((state) => state.cart.itemsList)
   console.log(cartItems)
