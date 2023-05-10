@@ -8,25 +8,25 @@ import { Login } from "./pages/login/Login"
 import { Regsiter } from "./pages/login/Regsiter"
 import { useSelector } from "react-redux"
 
-
-  const isLoggIn = useSelector((state) => state.auth.isLoggIn)
-  const cartItems = useSelector((state) => state.cart.itemsList)
-  console.log(cartItems)
+const App = () => {
+  const isLoggIn = useSelector((state) => state.auth.isLoggIn);
+  const cartItems = useSelector((state) => state.cart.itemsList);
+  console.log(cartItems);
   return (
     <>
       {isLoggIn && (
         <Router>
           <Header />
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/regsiter' component={Regsiter} />
-            <Route exact path='/account' component={Account} />
+            <Route exact path="/" component={Home} />
+            <Route exact path="/regsiter" component={Regsiter} />
+            <Route exact path="/account" component={Account} />
           </Switch>
           <Footer />
         </Router>
       )}
       {!isLoggIn && <Login />}
     </>
-  )
-}
+  );
+};
 export default App
