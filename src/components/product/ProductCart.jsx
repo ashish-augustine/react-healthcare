@@ -9,6 +9,7 @@ export const ProductCart = ({ key, id, cover, name, price }) => {
   const addToCart = () => {
     dispatch(cartActions.addToCart({ id, name, price, cover }))
   }
+  
   return (
     <>
       <div className='box boxItems' id='product'>
