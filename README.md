@@ -1,4 +1,4 @@
-# React Health Care E-commerce Application
+# React Health Care Application
 
 ## Available Scripts
 
